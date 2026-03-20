@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #07091a;
+  --bg2: #0d1030;
+  --bg3: #111540;
+  --cyan: #00C8FF;
+  --violet: #7B2FFF;
+  --white: #e8f4ff;
+  --muted: #8899bb;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(0,200,255,0.15);
+  --radius: 14px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme="light"] {
+  --bg: #f0f4ff;
+  --bg2: #e4ebff;
+  --bg3: #d8e3ff;
+  --white: #0a0f2c;
+  --muted: #445577;
+  --card: rgba(0,0,0,0.04);
+  --border: rgba(0,100,200,0.15);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Sora', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  transition: background 0.4s, color 0.4s;
+  overflow-x: hidden;
 }
+
+@keyframes spin1 {
+  from { transform-origin: center; transform: rotate(0deg); }
+  to   { transform-origin: center; transform: rotate(360deg); }
+}
+@keyframes spin2 {
+  from { transform-origin: center; transform: rotate(0deg); }
+  to   { transform-origin: center; transform: rotate(-360deg); }
+}
+@keyframes spin3 {
+  from { transform-origin: center; transform: rotate(0deg); }
+  to   { transform-origin: center; transform: rotate(360deg); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { r: 13; }
+  50%       { r: 16; }
+}
+
+.ring1 { animation: spin1 6s linear infinite; }
+.ring2 { animation: spin2 4s linear infinite; }
+.ring3 { animation: spin3 9s linear infinite; }
+.core-pulse { animation: pulse 2.5s ease-in-out infinite; }
+.fade-up { animation: fadeUp 0.8s ease both; }
+.fade-up-1 { animation: fadeUp 0.8s ease 0.1s both; }
+.fade-up-2 { animation: fadeUp 0.8s ease 0.2s both; }
+.fade-up-3 { animation: fadeUp 0.8s ease 0.3s both; }
+.fade-up-4 { animation: fadeUp 0.8s ease 0.4s both; }
