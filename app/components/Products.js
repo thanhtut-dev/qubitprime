@@ -2,29 +2,29 @@
 
 const products = [
   {
-    name: 'Module One',
-    desc: 'A powerful custom module designed to streamline your business operations and boost productivity for small teams.',
-    link: '#',
+    name: 'Customer Access by Sales Team',
+    desc: 'Restrict salespersons to customers assigned to their Sales Team, and allow access only to Sale Orders, CRM Leads, and Opportunities created by their own team.',
+    link: 'https://apps.odoo.com/apps/modules/18.0/customer_access_by_sales_team',
   },
   {
-    name: 'Module Two',
-    desc: 'Automate repetitive workflows and save hours every week with this intelligent Odoo extension for growing businesses.',
-    link: '#',
+    name: 'Product Access by Sales Team',
+    desc: 'Restrict product visibility by Sales Team. Allows each team to access and sell only products from assigned categories, including filtered quotation templates and product variants.',
+    link: 'https://apps.odoo.com/apps/modules/18.0/product_access_by_sales_team',
   },
   {
-    name: 'Module Three',
-    desc: 'Seamless integration and data management tools that help small businesses operate at enterprise level efficiency.',
-    link: '#',
+    name: 'Department Purchase Budget Control',
+    desc: 'Department-based Purchase Budget Control with Automatic Approval Workflow.',
+    link: 'https://apps.odoo.com/apps/modules/18.0/purchase_order_budget_control',
   },
   {
-    name: 'Module Four',
-    desc: 'Smart reporting and analytics built directly into Odoo — giving you real-time insights without extra tools.',
-    link: '#',
+    name: 'POS Action Access',
+    desc: 'Restrict POS actions using employee-level permissions.',
+    link: 'https://apps.odoo.com/apps/modules/18.0/pos_control_buttons_access',
   },
   {
-    name: 'Module Five',
-    desc: 'Customer experience tools that help small businesses build lasting relationships and grow their brand loyalty.',
-    link: '#',
+    name: 'Sale Quotation Discount Approval',
+    desc: 'Approval workflow for Sales quotation discounts with email notifications.',
+    link: 'https://apps.odoo.com/apps/modules/16.0/sale_quotation_discount_approval',
   },
 ];
 
