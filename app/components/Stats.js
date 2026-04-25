@@ -1,7 +1,7 @@
 'use client';
 
 const stats = [
-  { num: '5+', label: 'Odoo Modules' },
+  { num: '30+', label: 'Odoo Modules' },
   { num: '4+', label: 'Years Experience' },
   { num: '100%', label: 'Open Source Friendly' },
   { num: '🇹🇭', label: 'Based in Thailand' },
