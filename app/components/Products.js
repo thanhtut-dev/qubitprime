@@ -2,6 +2,11 @@
 
 const products = [
   {
+    name: 'Stock Visibility for Sales & Point of Sale',
+    desc: 'Built for businesses running multiple warehouses or shop locations who need real-time stock visibility without leaving the order screen.',
+    link: 'https://apps.odoo.com/apps/modules/19.0/qb_stock_visibility_sale_pos',
+  },
+  {
     name: 'Customer Access by Sales Team',
     desc: 'Restrict salespersons to customers assigned to their Sales Team, and allow access only to Sale Orders, CRM Leads, and Opportunities created by their own team.',
     link: 'https://apps.odoo.com/apps/modules/18.0/customer_access_by_sales_team',
