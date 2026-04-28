@@ -6,14 +6,25 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setForm({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
-  };
+  const handleSubmit = async (e) => {
+      e.preventDefault();
+      setSubmitted(true);
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(form),
+        });
+        if (!res.ok) throw new Error('Failed');
+        setTimeout(() => {
+          setSubmitted(false);
+          setForm({ name: '', email: '', subject: '', message: '' });
+        }, 3000);
+      } catch (err) {
+        console.error(err);
+        setSubmitted(false);
+      }
+    };
 
   const inputStyle = {
     width: '100%',
