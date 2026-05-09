@@ -2,6 +2,12 @@
 
 const products = [
   {
+    name: 'Sale Multi-UOM Pricelist',
+    desc: 'Sell the same product by Unit, Pack, or Box — each with its own price, automatically applied in sales orders and your eCommerce store.',
+    link: '',
+    demo_link: 'https://youtu.be/cp6kzMbKjZI?si=nXu-AFH1xSmjuDBg',
+  },
+  {
     name: 'Purchase Multi-Warehouse Distribution',
     desc: 'Split a single purchase order receipt across multiple warehouses and arrival dates automatically.',
     link: '',
