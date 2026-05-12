@@ -1,6 +1,12 @@
 'use client';
 
 const products = [
+   {
+    name: 'Product Access by Sales Team',
+    desc: 'Restrict product visibility and sale order access by Sales Team — each team sees only their assigned product categories and their own team\'s orders.',
+    link: '',
+    demo_link: 'https://youtu.be/o6ilJYhgEHc?si=R6oagH5a_u4kDNlH',
+  },
   {
     name: 'Sale Multi-UOM Pricelist',
     desc: 'Sell the same product by Unit, Pack, or Box — each with its own price, automatically applied in sales orders and your eCommerce store.',
@@ -23,12 +29,6 @@ const products = [
     name: 'Customer Access by Sales Team',
     desc: 'Restrict salespersons to customers assigned to their Sales Team, and allow access only to Sale Orders, CRM Leads, and Opportunities created by their own team.',
     link: 'https://apps.odoo.com/apps/modules/18.0/customer_access_by_sales_team',
-    demo_link: '',
-  },
-  {
-    name: 'Product Access by Sales Team',
-    desc: 'Restrict product visibility by Sales Team. Allows each team to access and sell only products from assigned categories, including filtered quotation templates and product variants.',
-    link: 'https://apps.odoo.com/apps/modules/18.0/product_access_by_sales_team',
     demo_link: '',
   },
   {
